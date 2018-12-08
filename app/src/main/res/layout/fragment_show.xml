@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <cn.bingoogolapple.bgabanner.BGABanner
+        android:id="@+id/bga_banner"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3.5" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.7"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#f5dd06"
+            android:gravity="center"
+            android:text="秒杀:"
+            android:layout_margin="5dp"
+            android:textColor="@color/colorA"
+            android:textSize="24sp" />
+
+        <com.umeng.soexample.customer.MyTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#77ef1717"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:layout_margin="5dp"
+            android:focusableInTouchMode="true"
+            android:gravity="center"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:singleLine="true"
+            android:text="我们在生命中行走，看不同的风景，遭遇不同的陌生人。有些人只是遇见，匆匆的行程里眼光的一次对视。有些人会在心上驻留一些时间，带给彼此温暖。那是最美的一种际遇，留待余生去不断重复地去想起……"
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="5.8">
+
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/pull_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</LinearLayout>
